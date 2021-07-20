@@ -15,13 +15,13 @@ A step by step series of examples that tell you have to get a development env ru
 Clone this repository:
 
 ```
-git clone https://github.com/udacity/nd1309/tree/master/course-5/project-6
+git clone https://github.com/prince-curie/real-estate.git
 ```
 
-Change directory to ```project-6``` folder and install all requisite npm packages (as listed in ```package.json```):
+Change directory to ```real-estate``` folder and install all requisite npm packages (as listed in ```package.json```):
 
 ```
-cd project-6
+cd real-estate
 npm install
 ```
 
@@ -34,7 +34,7 @@ Launch Ganache:
 Compile smart contracts:
 
 ```
-truffle compile
+truffle compile --network development
 ```
 
 This will create the smart contract artifacts in folder ```build\contracts```.
@@ -42,13 +42,13 @@ This will create the smart contract artifacts in folder ```build\contracts```.
 Migrate smart contracts to the locally running blockchain, ganache:
 
 ```
-truffle migrate
+truffle migrate --network development
 ```
 
 Test smart contracts:
 
 ```
-truffle test
+truffle test --network development
 ```
 
 All 10 tests should pass.
@@ -69,7 +69,7 @@ All 10 tests should pass.
 * [Docker](https://docs.docker.com/install/)
 * [ZoKrates](https://github.com/Zokrates/ZoKrates)
 
-## ABI {#abi-id}
+## ABI
 
 ```
 [
